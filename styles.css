@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
 
-*{
+*
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 
-header{
+header
+{
   position: absolute;
   top: 0;
   left: 0;
@@ -19,7 +21,29 @@ header{
   z-index: 1000;
 }
 
-.banner{
+header .logo 
+{
+  max-width: 120px;  
+}
+
+header .toggle 
+{
+  max-width: 60px;  
+  cursor: pointer;
+}
+
+header .toggle img 
+{
+  max-width: 100%;
+}
+
+header .logo img 
+{
+  height: 80px;
+}
+
+.banner
+{
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -32,6 +56,31 @@ header{
   align-items: center;
 }
 
-.logo img {
-  height: 80px;
+.banner .content 
+{
+  max-width: 550px;
 }
+
+.banner .content h2 
+{
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2.5em;
+  letter-spacing: 0.1 em;
+  color: #FFF;
+  margin-top: 85px;
+}
+
+.banner .content h2 span 
+{
+  font-weight: 800;
+}
+
+.banner .content p {
+  font-size: 1.2em;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  line-height: 1.5em;
+  color: #FFF;
+  margin: 15px 0 35px;
+} 
