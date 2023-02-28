@@ -146,7 +146,7 @@ header .logo img
   cursor: pointer;
   animation: animate 25s linear infinite;
 }
-/* 
+ 
 @keyframes animate
 {
   0%, 100%
@@ -157,14 +157,14 @@ header .logo img
   {
     background-position: bottom;
   }
-} */
+}
 
 .trailer 
 {
   position: fixed;
   top: 50%;
   left: 50%;
-  transoform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   z-index: 10000;
   background: rgba(0,0,0,0.95);
   width: 100%;
@@ -176,9 +176,15 @@ header .logo img
   opacity: 0;
 }
 
+.trailer.active
+{
+  visibility: visible;
+  opacity: 1;
+}
+
 .trailer video 
 {
-  max-width: 100%;
+  max-width: 900px;
   outline: none;
 }
 
@@ -190,5 +196,4 @@ header .logo img
   cursor: pointer;
   filter: invert(1);
   max-width: 32px;
-
 }
